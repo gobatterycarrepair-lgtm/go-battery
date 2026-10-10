@@ -435,3 +435,9 @@ export const whyChooseUs = [
 i have provide all information of website....i want to develop this website step by step....this website design must be world class ultra modern , beautiful , responsive , professional , very efficative , responsive for all devices , don't use any animation library or extra animation,,,,i provide one by one component name  you have to design the component,,,,,,
 
 first you have to design a beautiful , unique, efficative , world class ultra modern design , responsive hero section for this website using tailwindcss , shadcnui component, remixicon for icon ,,,, so design it,,,,i provide global.css and shadcnui component file,,,, use my brand primary color,,, and support color is white or black ,,,, so design a best hero section ,,, responsive font 
+
+now you have to design a world class ultra modern and very professional mind blowing efficative and best who choose us  section three step which very unique and modern
+
+i have provide referance project card , project modal and project component,,,,,now you have to design a world class ultra modern , very professional mind blowing efficative and best who choose us  section three step which very unique and modern
+
+-> project card and component totally different from referance project card and component,,, it must more world class ultra modern design , unique and professional and responsive
