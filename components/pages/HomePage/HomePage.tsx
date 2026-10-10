@@ -1,13 +1,11 @@
-
 import { Hero } from '@/components/view/Hero/Hero'
-// import { HeroSection } from '@/components/view/Hero/Hero'
-import React from 'react'
+import HowItWorks from '@/components/view/HowItWorks/HowItWorks'
 
 export default function HomePage() {
   return (
     <div>
         <Hero />
-        {/* <HeroSection /> */}
+        <HowItWorks />
     </div>
   )
 }

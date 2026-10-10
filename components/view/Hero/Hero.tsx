@@ -721,14 +721,15 @@ export function Hero() {
                                 <div className="absolute -right-3 -top-3 hidden h-full w-full rounded-3xl border-2 border-primary/30 sm:block" />
 
                                 {/* Main image */}
-                                <div className="relative aspect-4/5 w-full overflow-hidden rounded-3xl border border-border bg-muted sm:aspect-4/3 lg:aspect-5/5">
+                                <div className="relative h-auto w-full overflow-hidden rounded-3xl border border-border bg-muted sm:aspect-4/3 lg:aspect-4/3">
                                     <Image
                                         src={heroBanner?.hero}
                                         alt="Certified mobile car mechanic repairing a vehicle on-site in Dubai"
                                         fill
-                                        priority
+                                        // priority
                                         sizes="(max-width: 1024px) 100vw, 50vw"
-                                        className="object-cover"
+                                        // className="object-cover"
+                                        className="h-full"
                                     />
 
                                     {/* Bottom gradient overlay */}
@@ -751,82 +752,13 @@ export function Hero() {
                                                     Battery · Diagnostics · Repairs
                                                 </p>
                                             </div>
-                                            <Link
-                                                href="/services"
-                                                className="group inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 backdrop-blur-md transition-colors hover:border-primary/50 hover:bg-primary/20"
-                                            >
-                                                <span className="text-[10px] font-bold uppercase tracking-wider text-white group-hover:text-primary">
-                                                    Services
-                                                </span>
-                                                <RiArrowRightUpLine className="size-3 text-primary" />
-                                            </Link>
+           
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            {/* ---------- Floating Card: Live Availability (TOP-LEFT, overlapping) ---------- */}
-                            <div className="absolute -left-3 top-6 w-[210px] rounded-2xl border border-border bg-card p-3.5 shadow-xl shadow-black/[0.08] dark:shadow-black/40 sm:-left-6 sm:top-8">
-                                <div className="flex items-center gap-2.5">
-                                    <div className="relative flex size-9 shrink-0 items-center justify-center rounded-lg bg-primary">
-                                        <RiFlashlightFill className="size-4 text-primary-foreground" />
-                                        <span className="absolute -right-0.5 -top-0.5 flex size-2.5">
-                                            <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary/60" />
-                                            <span className="relative inline-flex size-2.5 rounded-full bg-primary border border-card" />
-                                        </span>
-                                    </div>
-                                    <div className="min-w-0">
-                                        <p className="text-[9px] font-bold uppercase tracking-wider text-muted-foreground">
-                                            ● Live Now
-                                        </p>
-                                        <p className="mt-0.5 text-xs font-bold leading-tight text-foreground">
-                                            Mechanics Available
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* ---------- Floating Card: Rating + Response (BOTTOM-RIGHT, overlapping) ---------- */}
-                            <div className="absolute -bottom-4 -right-3 w-[230px] rounded-2xl border border-border bg-card p-3.5 shadow-xl shadow-black/[0.08] dark:shadow-black/40 sm:-bottom-6 sm:-right-6">
-                                <div className="flex items-center justify-between">
-                                    <div className="flex items-center gap-1.5">
-                                        <div className="flex -space-x-0.5">
-                                            {[...Array(5)].map((_, i) => (
-                                                <RiStarFill key={i} className="size-3 text-primary" />
-                                            ))}
-                                        </div>
-                                        <span className="text-xs font-bold text-foreground">5.0</span>
-                                    </div>
-                                    <RiVerifiedBadgeFill className="size-4 text-primary" />
-                                </div>
-                                <p className="mt-1.5 text-[10px] font-medium text-muted-foreground">
-                                    500+ Happy Customers in Dubai
-                                </p>
-                                <div className="mt-2.5 flex items-center gap-1.5 border-t border-border pt-2.5">
-                                    <RiTimeFill className="size-3 text-primary" />
-                                    <span className="text-[10px] font-bold text-foreground">
-                                        {responseTime}
-                                    </span>
-                                    <span className="text-[10px] text-muted-foreground">
-                                        avg. response
-                                    </span>
-                                </div>
-                            </div>
-
-                            {/* ---------- Service Areas Chip (MID-RIGHT, vertical) ---------- */}
-                            <div className="absolute right-4 top-1/2 hidden -translate-y-1/2 lg:block">
-                                <div className="flex flex-col items-center gap-2 rounded-2xl border border-border bg-card/80 p-2.5 backdrop-blur-md">
-                                    <RiMapPinFill className="size-3.5 text-primary" />
-                                    <div className="h-12 w-px bg-border" />
-                                    <span
-                                        className="text-[10px] font-bold uppercase tracking-[0.15em] text-muted-foreground"
-                                        style={{ writingMode: "vertical-rl" }}
-                                    >
-                                        {serviceAreas?.length || 16}+ Areas
-                                    </span>
-                                </div>
-                            </div>
-
+                           
                             {/* ---------- Decorative Corner Plus (BOTTOM-LEFT, subtle) ---------- */}
                             <div className="pointer-events-none absolute -bottom-2 -left-2 hidden items-center justify-center sm:flex">
                                 <div className="relative size-6">
