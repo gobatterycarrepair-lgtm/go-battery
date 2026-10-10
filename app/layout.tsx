@@ -1,7 +1,5 @@
 import { Geist, Geist_Mono, Noto_Serif } from "next/font/google"
-
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
 
 const notoSerif = Noto_Serif({subsets:['latin'],variable:'--font-serif'});
@@ -28,7 +26,8 @@ export default function RootLayout({
       className={cn("antialiased", fontSans.variable, fontMono.variable, "font-serif", notoSerif.variable)}
     >
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        {/* <ThemeProvider></ThemeProvider> */}
+        {children}
       </body>
     </html>
   )
