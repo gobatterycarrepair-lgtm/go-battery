@@ -602,7 +602,7 @@ export function Hero() {
             {/* ============================================================
                 MAIN CONTENT
             ============================================================ */}
-            <div className="relative container mx-auto px-4 py-10">
+            <div className="relative container mx-auto px-4 py-5">
                 <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-12 lg:gap-10">
 
                     {/* =====================================================
@@ -841,36 +841,120 @@ export function Hero() {
                 {/* ============================================================
                     BOTTOM STRIP — SERVICE AREAS TICKER (unique touch)
                 ============================================================ */}
-                <div className="relative mt-14 border-t border-border pt-6 sm:mt-16">
-                    <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
-                        <div className="inline-flex items-center gap-2">
-                            <RiMapPinFill className="size-3.5 text-primary" />
-                            <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-muted-foreground">
-                                Service Areas
-                            </span>
-                        </div>
-                        <div className="hidden h-4 w-px bg-border sm:block" />
-                        <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-                            {serviceAreas?.map((area) => (
-                                <Link
-                                    key={area.slug}
-                                    href={`/area-we-serve/${area.slug}`}
-                                    className="group inline-flex items-center gap-1.5 text-xs font-medium text- transition-colors hover:text-primary"
-                                >
-                                    <span className="size-1 rounded-full bg-primary/40 transition-colors group-hover:bg-primary" />
-                                    {area.name}
-                                </Link>
-                            ))}
-                            {/* <Link
-                                href="/area-we-serve"
-                                className="inline-flex items-center gap-1 text-xs font-bold text-primary transition-colors hover:text-primary/80"
-                            >
-                                View All
-                                <RiArrowRightLine className="size-3" />
-                            </Link> */}
-                        </div>
+{/* ============================================================
+    BOTTOM STRIP — SERVICE AREAS (premium grid, all visible)
+============================================================ */}
+<div className="relative mt-14 border-t border-border pt-10 sm:mt-16">
+    {/* Subtle background glow */}
+    <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute -top-20 left-1/4 h-64 w-64 rounded-full bg-primary/[0.06] blur-3xl" />
+        <div className="absolute -bottom-20 right-1/4 h-64 w-64 rounded-full bg-primary/[0.04] blur-3xl" />
+    </div>
+
+    <div className="relative">
+        {/* ============ Header Row ============ */}
+        <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+            <div className="flex items-center gap-3">
+                {/* Icon with pulse */}
+                <span className="relative flex size-11 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary/80 shadow-lg shadow-primary/25">
+                    <RiMapPinFill className="size-5 text-primary-foreground" />
+                    <span className="absolute -right-1 -top-1 flex size-3">
+                        <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary/60" />
+                        <span className="relative inline-flex size-3 rounded-full bg-primary border-2 border-background" />
+                    </span>
+                </span>
+
+                <div>
+                    <div className="flex items-center gap-2">
+                        <h3 className="text-base font-bold tracking-tight text-foreground sm:text-lg">
+                            Areas We Serve
+                        </h3>
+                        <span className="inline-flex items-center rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-primary">
+                            {serviceAreas?.length || 16}+ Locations
+                        </span>
                     </div>
+                    <p className="mt-0.5 text-xs text-muted-foreground">
+                        Fast onsite dispatch across all of Dubai
+                    </p>
                 </div>
+            </div>
+
+            <Link
+                href="/area-we-serve"
+                className="group inline-flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-2 text-xs font-bold text-foreground shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md hover:shadow-primary/10"
+            >
+                <span className="text-muted-foreground transition-colors group-hover:text-primary">
+                    Explore All Areas
+                </span>
+                <span className="flex size-5 items-center justify-center rounded-md bg-primary/10 transition-colors group-hover:bg-primary">
+                    <RiArrowRightLine className="size-3 text-primary transition-colors group-hover:text-primary-foreground" />
+                </span>
+            </Link>
+        </div>
+
+        {/* ============ Area Chips Grid ============ */}
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+            {serviceAreas?.map((area, index) => (
+                <Link
+                    key={area.slug}
+                    href={`/area-we-serve/${area.slug}`}
+                    className="group relative overflow-hidden rounded-xl border border-border bg-card p-2.5 transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md hover:shadow-primary/10"
+                    style={{
+                        animationDelay: `${index * 30}ms`,
+                    }}
+                >
+                    {/* Hover gradient background */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.08] via-transparent to-transparent opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
+
+                    {/* Content */}
+                    <div className="relative flex items-center gap-2">
+                        {/* Number badge */}
+                        <span className="flex size-6 shrink-0 items-center justify-center rounded-md bg-primary/10 text-[10px] font-bold text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                            {String(index + 1).padStart(2, "0")}
+                        </span>
+
+                        {/* Area name */}
+                        <span className="truncate text-[11px] font-semibold text-foreground transition-colors group-hover:text-primary sm:text-xs">
+                            {area.name}
+                        </span>
+
+                        {/* Corner arrow */}
+                        <RiArrowRightUpLine className="ml-auto size-3 shrink-0 text-muted-foreground/30 transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-primary" />
+                    </div>
+
+                    {/* Bottom accent line */}
+                    <span className="absolute inset-x-0 bottom-0 h-px scale-x-0 bg-gradient-to-r from-transparent via-primary to-transparent transition-transform duration-300 group-hover:scale-x-100" />
+                </Link>
+            ))}
+        </div>
+
+        {/* ============ Trust Footer Strip ============ */}
+        <div className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 rounded-xl border border-border/60 bg-muted/30 px-4 py-2.5 sm:justify-between">
+            <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+                <span className="relative flex size-1.5">
+                    <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary/60" />
+                    <span className="relative inline-flex size-1.5 rounded-full bg-primary" />
+                </span>
+                Live Dispatch Active
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5">
+                <span className="inline-flex items-center gap-1.5 text-[10px] font-semibold text-muted-foreground">
+                    <RiTimeFill className="size-3 text-primary" />
+                    5–30 Min Arrival
+                </span>
+                <span className="inline-flex items-center gap-1.5 text-[10px] font-semibold text-muted-foreground">
+                    <RiShieldCheckFill className="size-3 text-primary" />
+                    Certified Mechanics
+                </span>
+                <span className="inline-flex items-center gap-1.5 text-[10px] font-semibold text-muted-foreground">
+                    <RiBatteryChargeFill className="size-3 text-primary" />
+                    Genuine Parts
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
             </div>
         </section>
     );
