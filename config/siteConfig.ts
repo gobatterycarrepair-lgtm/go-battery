@@ -16,7 +16,7 @@ export const SiteConfig = {
     location: "Jabal Ali First - The Gardens",
     city: "Dubai",
     country: "UAE",
-    founded: 2020,
+    founded: 2014,
     responseTime: "5 to 30 min",
     GMB: {
         PlaceID: "",
