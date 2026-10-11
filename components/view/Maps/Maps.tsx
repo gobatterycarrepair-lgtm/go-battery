@@ -91,7 +91,7 @@ export function Maps() {
     };
 
     return (
-        <section className="relative w-full overflow-hidden bg-background py-16 sm:py-20 lg:py-24">
+        <section className="relative w-full overflow-hidden bg-background py-10">
             {/* ============================================================
                 BACKGROUND DECORATIVE LAYER
             ============================================================ */}
@@ -124,9 +124,9 @@ export function Maps() {
                 {/* ============================================================
                     SECTION HEADER
                 ============================================================ */}
-                <div className="mb-12 lg:mb-16">
+                <div className="mb-8">
                     {/* Eyebrow */}
-                    <div className="flex items-center gap-4">
+                    {/* <div className="flex items-center gap-4">
                         <span className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/[0.06] px-3.5 py-1.5 backdrop-blur-sm">
                             <span className="relative flex size-1.5">
                                 <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary/60" />
@@ -137,7 +137,7 @@ export function Maps() {
                             </span>
                         </span>
                         <div className="h-px flex-1 bg-gradient-to-r from-primary/40 via-border to-transparent" />
-                    </div>
+                    </div> */}
 
                     {/* Headline + Chips */}
                     <div className="mt-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
@@ -308,7 +308,7 @@ export function Maps() {
                                 </div>
 
                                 {/* Trust row */}
-                                <div className="mt-4 flex items-center gap-3">
+                                {/* <div className="mt-4 flex items-center gap-3">
                                     <div className="flex items-center gap-1">
                                         {[...Array(5)].map((_, i) => (
                                             <RiStarFill
@@ -323,7 +323,7 @@ export function Maps() {
                                     <span className="text-[10px] text-muted-foreground">
                                         · 500+ happy drivers
                                     </span>
-                                </div>
+                                </div> */}
                             </div>
 
                             {/* Form */}
@@ -481,14 +481,14 @@ export function Maps() {
                                         </div>
 
                                         <div className="grid grid-cols-2 gap-3">
-                                            <a
+                                            <Link
                                                 href={numberCallLink}
                                                 className="group inline-flex h-11 items-center justify-center gap-2 rounded-xl border-2 border-border bg-background text-xs font-bold text-foreground transition-all duration-200 hover:border-primary hover:text-primary"
                                             >
                                                 <RiPhoneFill className="size-3.5" />
                                                 Call Now
-                                            </a>
-                                            <a
+                                            </Link>
+                                            <Link
                                                 href={whatsappCallLink}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
@@ -496,39 +496,13 @@ export function Maps() {
                                             >
                                                 <RiWhatsappFill className="size-3.5" />
                                                 WhatsApp
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 )}
                             </form>
                         </div>
                     </div>
-                </div>
-
-                {/* ============================================================
-                    BOTTOM STAT STRIP
-                ============================================================ */}
-                <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:mt-8 lg:grid-cols-4">
-                    <MiniStat
-                        icon={<RiTimeFill className="size-4" />}
-                        value={responseTime}
-                        label="Response Time"
-                    />
-                    <MiniStat
-                        icon={<RiShieldCheckFill className="size-4" />}
-                        value="24/7"
-                        label="Availability"
-                    />
-                    <MiniStat
-                        icon={<RiMapPinFill className="size-4" />}
-                        value={`${serviceAreas.length}+`}
-                        label="Districts Covered"
-                    />
-                    <MiniStat
-                        icon={<RiCheckboxCircleFill className="size-4" />}
-                        value="100%"
-                        label="Dubai Coverage"
-                    />
                 </div>
             </div>
         </section>
@@ -552,12 +526,12 @@ function FormField({
     return (
         <div className="group relative rounded-xl border border-border bg-background/50 transition-all duration-200 focus-within:border-primary/50 focus-within:bg-primary/[0.02] focus-within:shadow-sm focus-within:shadow-primary/10">
             {/* Label */}
-            <label
+            {/* <label
                 htmlFor={id}
                 className="absolute left-11 top-2 text-[10px] font-bold uppercase tracking-[0.12em] text-muted-foreground/70 transition-colors group-focus-within:text-primary"
             >
                 {label}
-            </label>
+            </label> */}
 
             <div className="flex items-start">
                 {/* Icon */}

@@ -1,3 +1,4 @@
+import { FAQ } from '@/components/view/FAQ/FAQ'
 import { FeaturedServices } from '@/components/view/FeaturedServices/FeaturedServices'
 import { Hero } from '@/components/view/Hero/Hero'
 import HowItWorks from '@/components/view/HowItWorks/HowItWorks'
@@ -16,6 +17,7 @@ export default function HomePage() {
         <WhyChooseUs />
         <Projects />
         <Maps />
+        <FAQ />
     </div>
   )
 }
