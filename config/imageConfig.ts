@@ -3,9 +3,9 @@ import hero from "../assets/dubai-car-repair-images/Expert Car Repair at Your Do
 import hero2 from "../assets/dubai-car-repair-images/hero-2.jpg";
 import hero3 from "../assets/dubai-car-repair-images/hero-3.jpg";
 
-//brand logo 
-// import logo from "../assets/logo/tlogo.png"
+
 import logo from "../assets/logo/logo-ft.png"
+
 
 //service banners
 import acRepair from "../assets/service-banner/ac-repair.png";

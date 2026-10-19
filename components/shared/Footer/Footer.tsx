@@ -148,7 +148,7 @@ export default function Footer() {
                     {/* ---------- COLUMN 1: Brand (4 cols) ---------- */}
                     <div className="lg:col-span-4">
                         {/* Logo */}
-                        <div className="flex w-52 sm:w-60">
+                        <div className="bg-white w-auto">
                             <Logo />
                         </div>
 

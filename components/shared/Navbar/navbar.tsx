@@ -157,7 +157,7 @@ export function Navbar() {
                     <div className="flex h-16 items-center justify-between gap-4 lg:h-18">
                         {/* ============ Logo ============ */}
                         {/* <Link href="/" className="flex shrink-0 items-center"> */}
-                            <div className="w-44 h-auto sm:w-52 md:w-60">
+                            <div className="w-44 h-auto sm:w-52 md:w-60 mt-3">
                                 <Logo />
                             </div>
                         {/* </Link> */}

@@ -24,6 +24,7 @@ export interface Project {
   service: string;
   category?: string;
   area: string;
+ description?: string;
   image?: string | any;
   seo?: ProjectSEO;
   clientOverview?: ProjectClientOverview;
