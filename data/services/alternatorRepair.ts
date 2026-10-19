@@ -15,7 +15,7 @@ popular: true,
         "All car makes and models supported"
     ],
 
-    slug: "car-alternator-repair-dubai",
+    slug: "car-alternator-repair",
 
     service_banner: ServiceBanner.altarnator ,
 

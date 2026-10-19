@@ -15,7 +15,7 @@ export const acGasRefillService = {
         "Expert technicians and quality refrigerants"
     ],
 
-    slug: "car-ac-gas-refill-service-dubai",
+    slug: "car-ac-gas-refill",
     service_banner: ServiceBanner?.gasRefill,
 
     intro: {

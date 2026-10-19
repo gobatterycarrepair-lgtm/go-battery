@@ -15,7 +15,7 @@ export const windowMotorRepair = {
         "All car makes and models supported"
     ],
 
-    slug: "car-window-motor-repair-dubai",
+    slug: "car-window-motor-repair",
     service_banner:ServiceBanner.windowMotor,
     intro: {
         heading: "Professional Car Window Motor Repair Service in Dubai",

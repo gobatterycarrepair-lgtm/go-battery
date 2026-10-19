@@ -15,7 +15,7 @@ export const oilChangeService = {
         "Affordable and quick service"
     ],
 
-    slug: "oil-change-service-dubai",
+    slug: "oil-change-service",
 
 
     service_banner: ServiceBanner?.oilChange,

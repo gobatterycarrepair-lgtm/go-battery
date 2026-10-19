@@ -16,7 +16,7 @@ export const computerDiagnosticService = {
         "Suitable for all car makes and models"
     ],
 
-    slug: "car-computer-diagnostic-service-dubai",
+    slug: "car-computer-diagnostic",
 
 
     service_banner: ServiceBanner.computerDiagnostic,

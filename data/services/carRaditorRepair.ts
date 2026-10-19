@@ -15,7 +15,7 @@ export const carRaditorRepair = {
         "All car makes and models supported"
     ],
 
-    slug: "car-radiator-repair-dubai",
+    slug: "car-radiator-repair",
 
 
     service_banner: ServiceBanner.raditor,

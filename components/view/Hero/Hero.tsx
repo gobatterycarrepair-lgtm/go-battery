@@ -620,31 +620,32 @@ export function Hero() {
                             </span>
                         </div>
 
-                        {/* Headline */}
-                        <h1 className="mt-6 text-4xl font-bold leading-[1.05] -tracking-normal text-foreground lg:text-5xl">
-                            24/7{" "}
-                            <span className="relative inline-block">
-                                <span className="relative z-10 text-primary">
-                                    Car Battery
-                                </span>
-                                <span className="absolute inset-x-0 bottom-1 z-0 h-2.5 bg-primary/15" />
-                            </span>{" "}
-                            &{" "}
-                            <span className="relative inline-block">
-                                <span className="relative z-10 text-primary">
-                                    Fast Car Repair
-                                </span>
-                                <span className="absolute inset-x-0 bottom-1 z-0 h-2.5 bg-primary/15" />
-                            </span>{" "}
-                            Mobile Mechanic Service in Dubai
-                        </h1>
+{/* Headline */}
+<h1 className="mt-6 text-4xl font-bold leading-[1.05] -tracking-normal text-foreground lg:text-5xl">
+    24/7{" "}
+    <span className="relative inline-block">
+        <span className="relative z-10 text-primary">
+            Car Battery
+        </span>
+        <span className="absolute inset-x-0 bottom-1 z-0 h-2.5 bg-primary/15" />
+    </span>{" "}
+    &{" "}
+    <span className="relative inline-block">
+        <span className="relative z-10 text-primary">
+            Fast Car Repair
+        </span>
+        <span className="absolute inset-x-0 bottom-1 z-0 h-2.5 bg-primary/15" />
+    </span>{" "}
+    Mobile Mechanic Service in Dubai
+</h1>
 
-                        {/* Description */}
-                        <p className="mt-6 max-w-xl text-sm leading-relaxed text-primary md:text-base">
-                            Fast, reliable roadside assistance and doorstep car repairs delivered directly to your location.
-                            Based in {city}, our certified technicians arrive in{" "}
-                            <span className="font-semibold text-foreground">{responseTime}</span> anywhere across Dubai.
-                        </p>
+{/* Description */}
+<p className="mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground md:text-base">
+    Fast, reliable roadside assistance and doorstep car repairs delivered directly to your location.
+    Based in{" "}
+    <span className="font-semibold text-foreground">Jebel Ali</span>, our certified technicians arrive in{" "}
+    <span className="font-semibold text-foreground">5–30 minutes</span> anywhere across Dubai.
+</p>
 
                         {/* Trust points */}
                         <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2.5">

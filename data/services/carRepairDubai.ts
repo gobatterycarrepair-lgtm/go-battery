@@ -17,7 +17,7 @@ popular: true,
     "Emergency roadside car repair"
   ],
 
-  slug: "car-repair-dubai",
+  slug: "car-repair-service",
 
 
   service_banner: ServiceBanner.transmission,

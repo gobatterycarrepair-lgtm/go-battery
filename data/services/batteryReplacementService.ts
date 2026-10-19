@@ -17,7 +17,7 @@ export const batteryReplacementService = {
         "Suitable for all car makes & models"
     ],
 
-    slug: "car-battery-replacement-dubai",
+    slug: "car-battery-replacement",
 
     service_banner: ServiceBanner.batteryReplacement,
     intro: {

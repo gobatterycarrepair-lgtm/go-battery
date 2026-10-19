@@ -16,7 +16,7 @@ export const acRepair = {
     ],
 
 
-    slug: "car-ac-repair-dubai",
+    slug: "car-ac-repair",
 
 
     service_banner: ServiceBanner?.acRepair,

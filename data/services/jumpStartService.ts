@@ -15,7 +15,7 @@ export const jumpStartService = {
         "On-site roadside assistance"
     ],
 
-    slug: "car-jump-start-dubai",
+    slug: "car-jump-start",
 
 
     service_banner: ServiceBanner.jumpstart,

@@ -16,7 +16,7 @@ export const mechanicService = {
     "Emergency roadside service across Dubai"
   ],
 
-  slug: "car-mechanic-service-dubai",
+  slug: "car-mechanic-service",
 
 
   service_banner: ServiceBanner.mechanic,

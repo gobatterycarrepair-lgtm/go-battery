@@ -15,7 +15,7 @@ export const fuelPumpRepair = {
         "All car makes and models supported"
     ],
 
-    slug: "car-fuel-pump-repair-dubai",
+    slug: "car-fuel-pump-repair",
 
 
     service_banner: ServiceBanner.fuelPump,

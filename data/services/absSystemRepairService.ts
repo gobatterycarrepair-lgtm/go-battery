@@ -15,7 +15,7 @@ export const absSystemRepairService = {
         "Safe and reliable driving after repair"
     ],
 
-    slug: "abs-system-repair-dubai",
+    slug: "abs-system-repair",
     service_banner: ServiceBanner?.breakpad,
 
     intro: {

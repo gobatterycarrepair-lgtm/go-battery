@@ -15,7 +15,7 @@ export const brakepadRepairService = {
         "Mobile service anywhere in Dubai"
     ],
 
-    slug: "brake-pad-repair-dubai",
+    slug: "brake-pad-repair",
 
 
     service_banner: ServiceBanner.breakpad,

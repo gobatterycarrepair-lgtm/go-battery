@@ -15,7 +15,7 @@ export const starterMotorRepair = {
         "All car makes and models supported"
     ],
 
-    slug: "car-starter-motor-repair-dubai",
+    slug: "car-starter-motor-repair",
 
 
     service_banner: ServiceBanner.transmission,

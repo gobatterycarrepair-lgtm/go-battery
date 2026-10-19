@@ -15,7 +15,7 @@ export const carDetailingService = {
         "Paint protection & scratch removal"
     ],
 
-    slug: "car-detailing-service-dubai",
+    slug: "car-detailing-service",
 
   
     service_banner: ServiceBanner.detailing,

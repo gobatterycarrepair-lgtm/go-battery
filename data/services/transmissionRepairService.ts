@@ -15,7 +15,7 @@ export const transmissionRepairService = {
         "Reliable and smooth driving after repair"
     ],
 
-    slug: "car-transmission-repair-dubai",
+    slug: "car-transmission-repair",
 
 
     service_banner: ServiceBanner.transmission,
