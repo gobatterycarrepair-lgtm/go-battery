@@ -3,7 +3,14 @@ import { getServicesNameSlug } from "@/utils/getServiceNameSlug";
 import { siteMetadata } from '@/seo/meta/metaData'
 import { Metadata } from 'next';
 
+
+// export default function TestErrorPage() {
+    // Deliberately throwing a runtime error
+    
+// }
+
 export const metadata:Metadata = siteMetadata.home
 export default function Page() {
+  
   return <HomePage />
 }
