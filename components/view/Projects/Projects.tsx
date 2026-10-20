@@ -16,7 +16,7 @@ import {
 import { Project } from "@/types/project";
 import { SiteConfig } from "@/config/siteConfig";
 import ProjectModal from "@/components/shared/Modal/ProjectModal";
-import ProjectCard from "@/components/shared/Navbar/Card/ProjectCard";
+import ProjectCard from "@/components/shared/Card/ProjectCard";
 import { projectData } from "@/data/projectData";
 
 

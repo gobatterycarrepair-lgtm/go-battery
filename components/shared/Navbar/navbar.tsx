@@ -109,7 +109,7 @@ export function Navbar() {
                         <span className="inline-flex items-center gap-1.5">
                             <RiMapPinLine className="size-3 text-primary" />
                             <span className="text-background/70">
-                                Al Jadaf, Dubai — Serving all UAE
+                               {SiteConfig.location} — Serving all UAE
                             </span>
                         </span>
                         <span className="h-3 w-px bg-background/20" />
@@ -615,7 +615,7 @@ export function Navbar() {
                     <div className="mb-4 flex items-center gap-2 text-xs text-muted-foreground">
                         <RiMapPinLine className="size-3.5 text-primary" />
                         <span>
-                            Al Jadaf, Dubai — Serving all of {SiteConfig.city}
+                            {SiteConfig.location}, Dubai — Serving all of 
                         </span>
                     </div>
 

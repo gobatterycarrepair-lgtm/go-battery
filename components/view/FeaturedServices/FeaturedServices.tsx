@@ -16,7 +16,7 @@ import {
 } from "@remixicon/react";
 import { services } from "@/data/services/services";
 import { SiteConfig } from "@/config/siteConfig";
-import { ServiceCard } from "@/components/shared/Navbar/Card/ServiceCard";
+import { ServiceCard } from "@/components/shared/Card/ServiceCard";
 
 const FEATURED_SERVICE_SLUGS = [
     "battery-replacement",

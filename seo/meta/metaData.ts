@@ -6,7 +6,7 @@ export const siteMetadata = {
   // 1. Home Page (/) - Core Brand & Main Service Hub
   home: {
     title: "24/7 Mobile Car Repair & Battery Replacement Dubai | 5-30 Min Response",
-    description: "Certified mobile mechanics in Dubai arriving in 5–30 mins. On-site car battery replacement, computer diagnostics & AC repair. 100% genuine parts. Call +971 50 941 1265.",
+    description: "Certified mobile mechanics in Dubai arriving in 5–30 mins. On-site car battery replacement, computer diagnostics & AC repair. 100% genuine parts. Call +971 5663 28021.",
     verification: {
       google: "",
     },

@@ -19,7 +19,7 @@ import {
 import { Project } from "@/types/project";
 import { projectData } from "@/data/projectData";
 import { SiteConfig } from "@/config/siteConfig";
-import ProjectCard from "@/components/shared/Navbar/Card/ProjectCard";
+import ProjectCard from "@/components/shared/Card/ProjectCard";
 import ProjectModal from "@/components/shared/Modal/ProjectModal";
 
 /* ============ Trust points ============ */

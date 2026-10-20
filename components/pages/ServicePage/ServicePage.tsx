@@ -22,7 +22,7 @@ import {
 } from "@remixicon/react";
 import { SiteConfig } from "@/config/siteConfig";
 import { services } from "@/data/services/services";
-import { ServiceCard } from "@/components/shared/Navbar/Card/ServiceCard";
+import { ServiceCard } from "@/components/shared/Card/ServiceCard";
 
 
 /* ============ Trust Points ============ */

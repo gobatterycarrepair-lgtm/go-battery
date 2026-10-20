@@ -13,8 +13,8 @@ import {
 import useEmblaCarousel from "embla-carousel-react";
 import { cn } from "@/lib/utils";
 import { Review, ReviewsProps } from "@/types/review";
-import ReviewCard from "@/components/shared/card/ReviewCard";
 import { generatePlaceholderReviews } from "@/data/review";
+import ReviewCard from "@/components/shared/Card/ReviewCard";
 
 /* ============ Placeholder reviews ============ */
 
